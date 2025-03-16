@@ -27,7 +27,7 @@ export default function AboutSection() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
               <img
-                src="/placeholder.svg?height=400&width=600&text=MAGA+Rally"
+                src="/nationalism.jpg?height=400&width=600&text=MAGA+Rally"
                 alt="Nationalism rally"
                 className="w-full h-64 object-cover"
               />
