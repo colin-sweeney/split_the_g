@@ -95,7 +95,7 @@ export default function HeroSection() {
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-[#FFCE00] rounded-full opacity-20 animate-pulse"></div>
               <img
-                src="/images/guinness_g_split"
+                src="/g_split.jpg"
                 alt="Split The G Challenge"
                 className="relative z-10 w-full h-full object-cover rounded-full border-8 border-white shadow-2xl transform rotate-3"
               />
