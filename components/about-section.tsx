@@ -17,7 +17,7 @@ export default function AboutSection() {
           <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
               <img
-                src="/placeholder.svg?height=400&width=600&text=African+Community"
+                src="/African_woman.jpg?height=400&width=600&text=African+Community"
                 alt="African community affected by funding cuts"
                 className="w-full h-64 object-cover"
               />
