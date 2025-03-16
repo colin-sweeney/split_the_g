@@ -43,7 +43,7 @@ export default function AboutSection() {
           <div className="grid md:grid-cols-2 gap-8 my-10">
             <div className="rounded-lg overflow-hidden shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
               <img
-                src="/african_woman.jpg?height=400&width=600&text=Guinness+Pour"
+                src="/African_woman.jpg?height=400&width=600&text=Guinness+Pour"
                 alt="Perfect Guinness pour"
                 className="w-full h-64 object-cover"
               />
@@ -53,7 +53,7 @@ export default function AboutSection() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
               <img
-                src="/DRC_landscape.jpg"
+                src="/medications.jpg"
                 alt="Split The G Challenge"
                 className="w-full h-64 object-cover"
               />
