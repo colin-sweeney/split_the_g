@@ -64,17 +64,10 @@ export default function AboutSection() {
               sustainable communities.
             </p>
 
-            <div className="bg-[#FFCE00]/20 p-8 rounded-lg border-l-4 border-[#FFCE00] mb-8 transform -rotate-1 shadow-lg">
-              <p className="italic font-bold text-xl text-[#007749]">
-                "When nations focus solely on their own 'greatness,' they miss that true greatness must include being
-                Generous, Gracious, and a Global force for good."
-              </p>
-            </div>
-
             <div className="grid md:grid-cols-2 gap-8 my-10">
               <div className="rounded-lg overflow-hidden shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
                 <img
-                  src="/placeholder.svg?height=400&width=600&text=Guinness+Pour"
+                  src="/DRC_landscape.jpg?height=400&width=600&text=Guinness+Pour"
                   alt="Perfect Guinness pour"
                   className="w-full h-64 object-cover"
                 />
