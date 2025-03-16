@@ -84,7 +84,7 @@ export default function AboutSection() {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
                 <img
-                  src="/images/guinness_g_split.jpg"
+                  src="/g_split.jpg"
                   alt="Split The G Challenge"
                   className="w-full h-64 object-cover"
                 />
