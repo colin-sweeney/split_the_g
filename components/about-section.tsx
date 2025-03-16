@@ -13,30 +13,6 @@ export default function AboutSection() {
           <div className="w-24 h-2 bg-[#E94B3C] rounded-full mb-6"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-10">
-            <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
-              <img
-                src="/African_woman.jpg?height=400&width=600&text=African+Community"
-                alt="African community affected by funding cuts"
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute -bottom-3 -right-3 bg-[#E94B3C] text-white text-xs px-3 py-1 rounded-full transform rotate-12">
-                Lives at stake
-              </div>
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
-              <img
-                src="/nationalism.jpg?height=400&width=600&text=MAGA+Rally"
-                alt="Nationalism rally"
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute -bottom-3 -right-3 bg-[#007749] text-white text-xs px-3 py-1 rounded-full transform -rotate-12">
-                Rising nationalism
-              </div>
-            </div>
-          </div>
-
           <div className="prose prose-lg max-w-none">
             <h3 className="text-2xl font-bold text-[#007749] mb-4 flex items-center">
               <span className="w-8 h-8 rounded-full bg-[#007749] text-white flex items-center justify-center mr-3 text-sm">
@@ -67,7 +43,7 @@ export default function AboutSection() {
             <div className="grid md:grid-cols-2 gap-8 my-10">
               <div className="rounded-lg overflow-hidden shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
                 <img
-                  src="/DRC_landscape.jpg?height=400&width=600&text=Guinness+Pour"
+                  src="/african_woman.jpg?height=400&width=600&text=Guinness+Pour"
                   alt="Perfect Guinness pour"
                   className="w-full h-64 object-cover"
                 />
@@ -77,7 +53,7 @@ export default function AboutSection() {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
                 <img
-                  src="/g_split.jpg"
+                  src="/DRC_landscape.jpg"
                   alt="Split The G Challenge"
                   className="w-full h-64 object-cover"
                 />
