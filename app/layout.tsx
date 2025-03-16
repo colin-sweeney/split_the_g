@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Split the G',
+  description: 'Join the movement to redefine greatness through the viral Split The G Challenge',
   generator: 'v0.dev',
 }
 
