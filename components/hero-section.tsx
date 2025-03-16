@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#007749] to-[#005C38] opacity-90"></div>
         <img
-          src="/placeholder.svg?height=1000&width=2000&text=Vibrant+African+Background"
+          src="/DRC_clinic.jpg?height=1000&width=2000&text=Vibrant+African+Background"
           alt="Vibrant African Background"
           className="w-full h-full object-cover"
         />
