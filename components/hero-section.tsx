@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowRight } from "lucide-react"
+import { ExternalLink } from "lucide-react" // Changed from ArrowRight to ExternalLink
 import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
@@ -15,6 +15,11 @@ export default function HeroSection() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Function to open GiveWell donation page
+  const openGiveWell = () => {
+    window.open('https://secure.givewell.org/', '_blank')
+  }
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -76,8 +81,9 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
+                onClick={openGiveWell}
               >
-                Take The Challenge <ArrowRight className="ml-2 h-4 w-4" />
+                Donate Now <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
@@ -126,4 +132,3 @@ export default function HeroSection() {
     </section>
   )
 }
-
