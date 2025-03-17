@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ExternalLink } from "lucide-react" // Changed from ArrowRight to ExternalLink
+import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
@@ -77,20 +77,13 @@ export default function HeroSection() {
                 <span className="text-2xl md:text-3xl font-bold text-white">Global</span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div>
               <Button
                 size="lg"
-                className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
+                className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg px-8 py-6 text-lg"
                 onClick={openGiveWell}
               >
-                Donate Now <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-[#FFCE00] text-[#FFCE00] hover:bg-[#FFCE00]/10 font-bold transform hover:scale-105 transition-transform shadow-lg"
-              >
-                Learn More
+                Donate Now <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
