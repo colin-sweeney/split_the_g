@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ChallengeDemo from "@/components/challenge-demo"
 // import DonationCounter from "@/components/donation-counter"
-import PartnershipSection from "@/components/partnership-section"
+// import PartnershipSection from "@/components/partnership-section"
 import TestimonialSection from "@/components/testimonial-section"
 import AboutSection from "@/components/about-section"
 //* I've turned off the "Communities we support section import ImageGallery from "@/components/image-gallery"
@@ -192,7 +192,7 @@ export default function Home() {
           </div>
         </section>
 
-        <PartnershipSection />
+  
 
         <section id="merchandise" className="py-20 bg-white relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-20 bg-[url('/placeholder.svg?height=100&width=2000&text=Pattern')] bg-repeat-x opacity-10 transform rotate-3"></div>
