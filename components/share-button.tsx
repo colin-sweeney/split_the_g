@@ -1,5 +1,3 @@
-share-button.tsx
-
 'use client'
 
 import { Button, ButtonProps } from "@/components/ui/button"
