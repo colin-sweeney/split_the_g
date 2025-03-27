@@ -4,7 +4,7 @@ import { Globe, Heart, Share2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ChallengeDemo from "@/components/challenge-demo"
-import DonationCounter from "@/components/donation-counter"
+// import DonationCounter from "@/components/donation-counter"
 import PartnershipSection from "@/components/partnership-section"
 import TestimonialSection from "@/components/testimonial-section"
 import AboutSection from "@/components/about-section"
@@ -188,7 +188,7 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
-            <DonationCounter className="mt-16" />
+  
           </div>
         </section>
 
