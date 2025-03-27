@@ -49,7 +49,10 @@ export default function Home() {
               Our Impact
             </Link>
           </nav>
-          <Button className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg">
+          <Button 
+            className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
+            onClick={() => window.open('https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global', '_blank')}
+          >
             Donate Now
           </Button>
         </div>
@@ -214,7 +217,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link 
-                    href="https://secure.givewell.org/" 
+                    href="https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all"
