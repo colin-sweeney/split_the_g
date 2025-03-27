@@ -16,10 +16,28 @@ export default function HeroSection() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Function to open GiveWell donation page
-  const openGiveWell = () => {
-    window.open('https://secure.givewell.org/', '_blank')
+  // Updated to point to your new fundraiser
+  const openFundraiser = () => {
+    window.open('https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global', '_blank')
   }
+
+  return (
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Rest of the component remains the same */}
+      
+      {/* Update just the Button's onClick handler */}
+      <Button
+        size="lg"
+        className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
+        onClick={openFundraiser}
+      >
+        Donate Now <ExternalLink className="ml-2 h-4 w-4" />
+      </Button>
+      
+      {/* ... */}
+    </section>
+  )
+}
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
