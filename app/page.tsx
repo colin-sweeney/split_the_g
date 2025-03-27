@@ -132,7 +132,7 @@ export default function Home() {
           </div>
         </section>
 
-        <ImageGallery />
+       
 
         <section id="impact" className="py-20 bg-[#F5F5F5] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFCE00] rounded-full opacity-10 transform translate-x-1/2 -translate-y-1/2"></div>
