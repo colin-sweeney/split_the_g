@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import ChallengeDemo from "@/components/challenge-demo"
 // import DonationCounter from "@/components/donation-counter"
 // import PartnershipSection from "@/components/partnership-section"
-import TestimonialSection from "@/components/testimonial-section"
+// import TestimonialSection from "@/components/testimonial-section"
 import AboutSection from "@/components/about-section"
 //* I've turned off the "Communities we support section import ImageGallery from "@/components/image-gallery"
 import HeroSection from "@/components/hero-section"
@@ -47,18 +47,6 @@ export default function Home() {
               className="text-sm font-medium hover:text-[#FFCE00] transition-colors transform hover:-rotate-2 hover:scale-110"
             >
               Our Impact
-            </Link>
-            <Link
-              href="#partners"
-              className="text-sm font-medium hover:text-[#FFCE00] transition-colors transform hover:rotate-2 hover:scale-110"
-            >
-              Partners
-            </Link>
-            <Link
-              href="#merchandise"
-              className="text-sm font-medium hover:text-[#FFCE00] transition-colors transform hover:-rotate-2 hover:scale-110"
-            >
-              Merchandise
             </Link>
           </nav>
           <Button className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg">
@@ -132,8 +120,6 @@ export default function Home() {
           </div>
         </section>
 
-       
-
         <section id="impact" className="py-20 bg-[#F5F5F5] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFCE00] rounded-full opacity-10 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#E94B3C] rounded-full opacity-10 transform -translate-x-1/2 translate-y-1/2"></div>
@@ -188,69 +174,8 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
-  
           </div>
         </section>
-
-  
-
-        <section id="merchandise" className="py-20 bg-white relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-20 bg-[url('/placeholder.svg?height=100&width=2000&text=Pattern')] bg-repeat-x opacity-10 transform rotate-3"></div>
-          <div className="absolute bottom-0 right-0 w-full h-20 bg-[url('/placeholder.svg?height=100&width=2000&text=Pattern')] bg-repeat-x opacity-10 transform -rotate-3"></div>
-
-          <div className="container relative z-10">
-            <div className="flex flex-col items-center mb-12">
-              <div className="inline-block bg-[#007749] text-white font-bold px-4 py-1 rounded-full transform -rotate-2 mb-4">
-                Shop & Support
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-center mb-2">African-Made Merchandise</h2>
-              <div className="w-24 h-2 bg-[#E94B3C] rounded-full mb-6"></div>
-            </div>
-
-            <p className="text-center text-lg mb-12 max-w-3xl mx-auto">
-              Every purchase supports economic opportunities in the communities where Guinness has deep roots.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[1, 2, 3, 4].map((item, index) => (
-                <div
-                  key={item}
-                  className={`group cursor-pointer transform ${index % 2 === 0 ? "rotate-2" : "-rotate-2"} hover:rotate-0 transition-all`}
-                >
-                  <div className="aspect-square bg-[#F5F5F5] rounded-lg mb-4 overflow-hidden shadow-lg">
-                    <img
-                      src={`/placeholder.svg?height=300&width=300&text=African-Made+Product+${item}`}
-                      alt={`Product ${item}`}
-                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="pl-2">
-                    <h3 className="font-bold text-lg">
-                      Split The G {item === 1 ? "T-Shirt" : item === 2 ? "Cap" : item === 3 ? "Tote Bag" : "Hoodie"}
-                    </h3>
-                    <div className="flex items-center">
-                      <span className="text-[#E94B3C] font-bold">$29.99</span>
-                      <span className="ml-2 bg-[#FFCE00] text-[#007749] text-xs px-2 py-0.5 rounded-full">
-                        Supports Africa
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <Button
-                size="lg"
-                className="bg-[#007749] text-white hover:bg-[#005C38] font-bold shadow-lg transform hover:scale-105 transition-transform"
-              >
-                View All Products
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <TestimonialSection />
       </main>
 
       <footer className="bg-[#007749] text-white py-12 relative overflow-hidden">
@@ -287,11 +212,6 @@ export default function Home() {
                     Our Impact
                   </Link>
                 </li>
-                <li>
-                  <Link href="#partners" className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all">
-                    Partners
-                  </Link>
-                </li>
               </ul>
             </div>
             <div>
@@ -305,16 +225,6 @@ export default function Home() {
                 <li>
                   <Link href="#" className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all">
                     Donate
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all">
-                    Become a Partner
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all">
-                    Shop Merchandise
                   </Link>
                 </li>
               </ul>
@@ -357,4 +267,3 @@ export default function Home() {
     </div>
   )
 }
-
