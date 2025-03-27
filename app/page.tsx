@@ -11,6 +11,8 @@ import AboutSection from "@/components/about-section"
 //* I've turned off the "Communities we support section import ImageGallery from "@/components/image-gallery"
 import HeroSection from "@/components/hero-section"
 import FloatingShapes from "@/components/floating-shapes"
+import DonateButton from "@/components/donate-button"
+import ShareButton from "@/components/share-button"
 
 export default function Home() {
   return (
@@ -49,12 +51,7 @@ export default function Home() {
               Our Impact
             </Link>
           </nav>
-          <Button 
-            className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
-            onClick={() => window.open('https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global', '_blank')}
-          >
-            Donate Now
-          </Button>
+          <DonateButton />
         </div>
       </header>
 
@@ -114,9 +111,7 @@ export default function Home() {
                     </div>
                   </li>
                 </ul>
-                <Button className="bg-[#007749] text-white hover:bg-[#005C38] font-bold shadow-lg transform hover:scale-105 transition-transform">
-                  <Share2 className="mr-2 h-4 w-4" /> Share Your Challenge
-                </Button>
+                <ShareButton />
               </div>
               <ChallengeDemo />
             </div>
