@@ -8,7 +8,7 @@ import DonationCounter from "@/components/donation-counter"
 import PartnershipSection from "@/components/partnership-section"
 import TestimonialSection from "@/components/testimonial-section"
 import AboutSection from "@/components/about-section"
-import ImageGallery from "@/components/image-gallery"
+//* I've turned off the "Communities we support section import ImageGallery from "@/components/image-gallery"
 import HeroSection from "@/components/hero-section"
 import FloatingShapes from "@/components/floating-shapes"
 
