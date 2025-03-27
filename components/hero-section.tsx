@@ -23,24 +23,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Rest of the component remains the same */}
-      
-      {/* Update just the Button's onClick handler */}
-      <Button
-        size="lg"
-        className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
-        onClick={openFundraiser}
-      >
-        Donate Now <ExternalLink className="ml-2 h-4 w-4" />
-      </Button>
-      
-      {/* ... */}
-    </section>
-  )
-}
-
-  return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#007749] to-[#005C38] opacity-90"></div>
         <img
@@ -95,20 +77,13 @@ export default function HeroSection() {
                 <span className="text-2xl md:text-3xl font-bold text-white">Global</span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div>
               <Button
                 size="lg"
-                className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg"
-                onClick={openGiveWell}
+                className="bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg px-8 py-6 text-lg"
+                onClick={openFundraiser}
               >
-                Donate Now <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-[#FFCE00] text-[#FFCE00] hover:bg-[#FFCE00]/10 font-bold transform hover:scale-105 transition-transform shadow-lg"
-              >
-                Learn More
+                Donate Now <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
