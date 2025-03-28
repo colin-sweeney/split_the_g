@@ -21,18 +21,18 @@ export default function ChallengeSection() {
           <div className="w-24 h-2 bg-[#007749] rounded-full mb-6"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="bg-[#F9F9F9] p-8 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
-            <div className="mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+          <div className="md:col-span-3 bg-[#F9F9F9] p-8 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
+            <div className="mb-6">
               <h3 className="text-2xl font-bold mb-4 text-[#007749]">How It Works</h3>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-4">
                 Inspired by the iconic Guinness pour, participants attempt to split the G perfectly in this fun
                 challenge that helps restore vital global health initiatives.
               </p>
             </div>
 
-            {/* All steps shown at once */}
-            <div className="space-y-8 mb-8">
+            {/* All steps shown at once with reduced spacing */}
+            <div className="space-y-6 mb-6">
               {/* Step 1 */}
               <div className="flex items-start">
                 <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
@@ -60,32 +60,38 @@ export default function ChallengeSection() {
               </div>
 
               {/* Step 3 - Options */}
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* Perfect Split Path */}
-                  <div className="p-4 rounded-lg border-2 border-[#FFCE00]">
-                    <div className="flex items-center mb-2">
-                      <div className="mr-2 h-8 w-8 rounded-full bg-[#FFCE00] flex items-center justify-center text-[#007749] font-bold shadow-md">
-                        ✓
+              <div className="flex items-start">
+                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
+                  3
+                </div>
+                <div className="w-full">
+                  <h4 className="font-bold text-lg mb-2">Donate Based on Your Result</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {/* Perfect Split Path */}
+                    <div className="p-3 rounded-lg border-2 border-[#FFCE00]">
+                      <div className="flex items-center mb-1">
+                        <div className="mr-2 h-6 w-6 rounded-full bg-[#FFCE00] flex items-center justify-center text-[#007749] font-bold shadow-md text-xs">
+                          ✓
+                        </div>
+                        <h4 className="font-bold">Perfect Split!</h4>
                       </div>
-                      <h4 className="font-bold">Perfect Split!</h4>
+                      <p className="text-sm text-zinc-700">
+                        Donate $5 for achieving the perfect pour.
+                      </p>
                     </div>
-                    <p className="text-sm text-zinc-700">
-                      Donate $5 in your elation for achieving the perfect pour.
-                    </p>
-                  </div>
 
-                  {/* Imperfect Split Path */}
-                  <div className="p-4 rounded-lg border-2 border-[#E94B3C]">
-                    <div className="flex items-center mb-2">
-                      <div className="mr-2 h-8 w-8 rounded-full bg-[#E94B3C] flex items-center justify-center text-white font-bold shadow-md">
-                        ✓
+                    {/* Imperfect Split Path */}
+                    <div className="p-3 rounded-lg border-2 border-[#E94B3C]">
+                      <div className="flex items-center mb-1">
+                        <div className="mr-2 h-6 w-6 rounded-full bg-[#E94B3C] flex items-center justify-center text-white font-bold shadow-md text-xs">
+                          ✓
+                        </div>
+                        <h4 className="font-bold">Imperfect Split</h4>
                       </div>
-                      <h4 className="font-bold">Imperfect Split</h4>
+                      <p className="text-sm text-zinc-700">
+                        Donate $10 and try again next time.
+                      </p>
                     </div>
-                    <p className="text-sm text-zinc-700">
-                      Donate $10 and try again next time.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -101,7 +107,7 @@ export default function ChallengeSection() {
                     Your donation helps restore vital global health initiatives that have been put on pause.
                   </p>
                   <Button
-                    className="mt-3 bg-[#007749] text-white hover:bg-[#005C38]"
+                    className="mt-2 bg-[#007749] text-white hover:bg-[#005C38]"
                     onClick={() =>
                       window.open("https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global", "_blank")
                     }
@@ -127,7 +133,7 @@ export default function ChallengeSection() {
           </div>
 
           {/* Right side - Static image */}
-          <div className="relative aspect-video bg-[#F5F5F5] rounded-lg overflow-hidden shadow-xl transform -rotate-2 hover:rotate-0 transition-all">
+          <div className="md:col-span-2 relative aspect-video bg-[#F5F5F5] rounded-lg overflow-hidden shadow-xl transform -rotate-2 hover:rotate-0 transition-all">
             <img
               src="/split_g_motion.webp"
               alt="Challenge Demo"
