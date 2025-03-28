@@ -3,7 +3,8 @@ import { Globe, Heart, Share2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import ChallengeDemo from "@/components/challenge-demo"
+// import ChallengeDemo from "@/components/challenge-demo" // Remove or comment this import
+import ChallengeSection from "@/components/challenge-section" // Add this import
 // import DonationCounter from "@/components/donation-counter"
 // import PartnershipSection from "@/components/partnership-section"
 // import TestimonialSection from "@/components/testimonial-section"
@@ -59,64 +60,8 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
 
-        <section id="challenge" className="py-20 bg-white relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-20 bg-[url('/placeholder.svg?height=100&width=2000&text=Pattern')] bg-repeat-x opacity-10 transform -rotate-3"></div>
-          <div className="absolute bottom-0 right-0 w-full h-20 bg-[url('/placeholder.svg?height=100&width=2000&text=Pattern')] bg-repeat-x opacity-10 transform rotate-3"></div>
-
-          <div className="container relative z-10">
-            <div className="flex flex-col items-center mb-12">
-              <div className="inline-block bg-[#FFCE00] text-[#007749] font-bold px-4 py-1 rounded-full transform -rotate-2 mb-4">
-                Join the Fun!
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-center mb-2 relative">
-                The Split The G Challenge
-                <span className="absolute -top-6 -right-6 text-6xl text-[#E94B3C] opacity-20 transform rotate-12">
-                  !
-                </span>
-              </h2>
-              <div className="w-24 h-2 bg-[#007749] rounded-full mb-6"></div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="bg-[#F9F9F9] p-8 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
-                <p className="text-lg mb-8 font-medium">
-                  Inspired by the iconic Guinness pour, participants attempt to split the G perfectly. For each attempt:
-                </p>
-                <ul className="space-y-6 mb-8">
-                  <li className="flex items-start transform hover:-rotate-1 transition-transform">
-                    <div className="mr-4 h-10 w-10 rounded-full bg-[#FFCE00] flex items-center justify-center text-[#007749] font-bold shadow-md">
-                      ✓
-                    </div>
-                    <div>
-                      <span className="font-bold text-lg">Perfect Split:</span>
-                      <p className="text-zinc-700">$5 donation to global health initiatives</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start transform hover:rotate-1 transition-transform">
-                    <div className="mr-4 h-10 w-10 rounded-full bg-[#E94B3C] flex items-center justify-center text-white font-bold shadow-md">
-                      ✓
-                    </div>
-                    <div>
-                      <span className="font-bold text-lg">Imperfect Split:</span>
-                      <p className="text-zinc-700">$10 donation</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start transform hover:-rotate-1 transition-transform">
-                    <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
-                      ✓
-                    </div>
-                    <div>
-                      <span className="font-bold text-lg">Nominate 3 Friends:</span>
-                      <p className="text-zinc-700">Spread the challenge like the Ice Bucket Challenge</p>
-                    </div>
-                  </li>
-                </ul>
-                <ShareButton />
-              </div>
-              <ChallengeDemo />
-            </div>
-          </div>
-        </section>
+        {/* Replace the entire challenge section with the new component */}
+        <ChallengeSection />
 
         <section id="impact" className="py-20 bg-[#F5F5F5] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFCE00] rounded-full opacity-10 transform translate-x-1/2 -translate-y-1/2"></div>
