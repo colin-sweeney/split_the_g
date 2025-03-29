@@ -106,13 +106,14 @@ export default function Home() {
                 <CardContent className="pt-6 relative z-10">
                   <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFCE00] shadow-lg transform -rotate-3">
                     <svg className="h-8 w-8 text-[#007749]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                      <path d="M12 6.253v13h-1.25v-13H12zm1.25 13v-13H14v13h-.75z"/>
+                      <path d="M3.5 8.254v3.25H7v-3.25H3.5zm0 4.5v3.25H7v-3.25H3.5zm8.25 0v3.25h3.5v-3.25h-3.5zm8.25 0v3.25h3.5v-3.25H20zm-16.5 0H2v7h1.5v-7zm16.5 0v7h1.5v-7H20z"/>
+                      <path d="M18.5 8.254v3.25H22v-3.25h-3.5zm-8.25 0v3.25h3.5v-3.25h-3.5zm-8.25 0H1v7h1.5v-7zm8.25-4.5v3.25h3.5v-3.25h-3.5zm8.25 0v3.25H22v-3.25h-3.5z"/>
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Economic Opportunities</h3>
+                  <h3 className="text-2xl font-bold mb-2">Education & Awareness</h3>
                   <p className="text-zinc-600">
-                    Creating jobs through African-made merchandise and supporting local economies.
+                    Raising public consciousness about global health funding gaps and fostering understanding of international interdependence.
                   </p>
                 </CardContent>
               </Card>
