@@ -21,21 +21,30 @@ export default function ChallengeSection() {
           <div className="w-24 h-2 bg-[#007749] rounded-full mb-6"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
-          <div className="md:col-span-3 bg-[#F9F9F9] p-8 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold mb-4 text-[#007749]">How It Works</h3>
-              <p className="text-lg mb-4">
-                Inspired by the iconic Guinness pour, participants attempt to split the G perfectly in this fun
-                challenge that helps restore vital global health initiatives.
-              </p>
-            </div>
+        {/* Vertically aligned content */}
+        <div className="max-w-3xl mx-auto">
+          {/* Image first */}
+          <div className="mb-12 relative aspect-video bg-[#F5F5F5] rounded-lg overflow-hidden shadow-xl transform -rotate-2 hover:rotate-0 transition-all">
+            <img
+              src="/split_g_motion.webp"
+              alt="Challenge Demo"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-            {/* All steps shown at once with reduced spacing */}
-            <div className="space-y-6 mb-6">
+          {/* How it works section */}
+          <div className="bg-[#F9F9F9] p-8 rounded-lg shadow-lg mb-12">
+            <h3 className="text-2xl font-bold mb-4 text-[#007749]">How It Works</h3>
+            <p className="text-lg mb-6">
+              Inspired by the iconic Guinness pour, participants attempt to split the G perfectly in this fun
+              challenge that helps restore vital global health initiatives.
+            </p>
+
+            {/* Steps with consistent sizing */}
+            <div className="space-y-6">
               {/* Step 1 */}
               <div className="flex items-start">
-                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
+                <div className="mr-4 h-12 w-12 flex-shrink-0 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
                   1
                 </div>
                 <div>
@@ -48,7 +57,7 @@ export default function ChallengeSection() {
 
               {/* Step 2 */}
               <div className="flex items-start">
-                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
+                <div className="mr-4 h-12 w-12 flex-shrink-0 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
                   2
                 </div>
                 <div>
@@ -59,14 +68,18 @@ export default function ChallengeSection() {
                 </div>
               </div>
 
-              {/* Step 3 - Options */}
+              {/* Step 3 - Combined donation step */}
               <div className="flex items-start">
-                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
+                <div className="mr-4 h-12 w-12 flex-shrink-0 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
                   3
                 </div>
                 <div className="w-full">
-                  <h4 className="font-bold text-lg mb-2">Donate Based on Your Result</h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <h4 className="font-bold text-lg mb-2">Make a Difference</h4>
+                  <p className="text-zinc-700 mb-3">
+                    Your donation helps restore vital global health initiatives that have been put on pause.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                     {/* Perfect Split Path */}
                     <div className="p-3 rounded-lg border-2 border-[#FFCE00]">
                       <div className="flex items-center mb-1">
@@ -93,21 +106,9 @@ export default function ChallengeSection() {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex items-start">
-                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
-                  4
-                </div>
-                <div>
-                  <h4 className="font-bold text-lg mb-1">Make a Difference</h4>
-                  <p className="text-zinc-700">
-                    Your donation helps restore vital global health initiatives that have been put on pause.
-                  </p>
+                  
                   <Button
-                    className="mt-2 bg-[#007749] text-white hover:bg-[#005C38]"
+                    className="bg-[#007749] text-white hover:bg-[#005C38]"
                     onClick={() =>
                       window.open("https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global", "_blank")
                     }
@@ -117,10 +118,10 @@ export default function ChallengeSection() {
                 </div>
               </div>
 
-              {/* Step 5 */}
+              {/* Step 4 */}
               <div className="flex items-start">
-                <div className="mr-4 h-10 w-10 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
-                  5
+                <div className="mr-4 h-12 w-12 flex-shrink-0 rounded-full bg-[#007749] flex items-center justify-center text-white font-bold shadow-md">
+                  4
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Challenge 3 Friends</h4>
@@ -130,15 +131,6 @@ export default function ChallengeSection() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Right side - Static image */}
-          <div className="md:col-span-2 relative aspect-video bg-[#F5F5F5] rounded-lg overflow-hidden shadow-xl transform -rotate-2 hover:rotate-0 transition-all">
-            <img
-              src="/split_g_motion.webp"
-              alt="Challenge Demo"
-              className="w-full h-full object-cover"
-            />
           </div>
         </div>
       </div>
