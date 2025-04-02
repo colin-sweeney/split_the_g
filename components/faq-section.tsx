@@ -28,7 +28,7 @@ export default function FAQSection() {
     },
     {
       question: "Where exactly do my donations go?",
-      answer: "All donations support the Foreign Aid Bridge Fund, an emergency fund designed to help frontline organizations impacted by the U.S. foreign aid freeze. The fund specifically supports high-impact organizations with sustainable business models that have had their operations curtailed. These organizations work directly with communities in health, water, agriculture, education, and humanitarian response. For example, they've already made 14 emergency grants to organizations like Zvandiri (supporting young people with HIV in Zimbabwe), Maisha Meds (providing affordable healthcare across Africa), and Build Up Nepal (creating climate-resilient housing in disaster-prone areas)."
+      answer: "All donations support the Foreign Aid Bridge Fund, an emergency fund designed to help frontline organizations impacted by the U.S. foreign aid freeze. The fund specifically supports high-impact organizations with sustainable business models that have had their operations curtailed. These organizations work directly with communities in health, water, agriculture, education, and humanitarian response."
     },
     {
       question: "Do I have to drink Guinness to participate?",
@@ -53,7 +53,7 @@ export default function FAQSection() {
     "The perfect Guinness pour takes 119.5 seconds according to the company!",
     "Guinness bubbles actually sink rather than rise due to their unique nitrogen/carbon dioxide mix!",
     "The original Guinness brewery at St. James's Gate in Dublin has a 9,000-year lease signed in 1759!",
-    "A pint of Guinness contains about 210 calories, which is fewer than many other beers!",
+    "Guinness contains fewer calories than orange juice or skim milk!",
     "The distinctive Guinness harp logo is based on the Brian Boru harp, which is now preserved in Trinity College Dublin!",
     "Guinness is brewed in over 50 countries and sold in over 120 countries worldwide!",
     "Guinness Foreign Extra Stout makes up 45% of Guinness's global sales, largely due to its popularity in Africa and Southeast Asia!"
@@ -141,7 +141,8 @@ export default function FAQSection() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="p-5 pt-0 border-t border-gray-200">
+                {/* Removed the border-t that was causing the divider line */}
+                <div className="px-5 pb-5">
                   <p className="text-gray-600 mb-4">{item.answer}</p>
                   
                   {/* Fun fact that appears when expanded */}
