@@ -47,9 +47,7 @@ export default function AboutSection() {
                 alt="Perfect Guinness pour"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute -bottom-3 -right-3 bg-[#FFCE00] text-[#007749] text-xs px-3 py-1 rounded-full transform rotate-12">
-                The perfect pour
-              </div>
+              {/* Label removed */}
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
               <img
@@ -57,9 +55,7 @@ export default function AboutSection() {
                 alt="Split The G Challenge"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute -bottom-3 -right-3 bg-[#007749] text-white text-xs px-3 py-1 rounded-full transform -rotate-12">
-                The challenge
-              </div>
+              {/* Label removed */}
             </div>
           </div>
 
