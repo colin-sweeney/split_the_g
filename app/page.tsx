@@ -14,6 +14,7 @@ import HeroSection from "@/components/hero-section"
 import FloatingShapes from "@/components/floating-shapes"
 import DonateButton from "@/components/donate-button"
 import ShareButton from "@/components/share-button"
+import FAQSection from "@/components/faq-section"
 
 export default function Home() {
   return (
@@ -51,6 +52,12 @@ export default function Home() {
             >
               Our Impact
             </Link>
+            <Link
+            href="#faq"
+              className="text-sm font-medium hover:text-[#FFCE00] transition-colors transform hover:rotate-2 hover:scale-110"
+            >
+            FAQs
+              </Link>
           </nav>
           <DonateButton />
         </div>
@@ -120,6 +127,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+         {/* Add the FAQ Section */}
+        <FAQSection />
       </main>
 
       <footer className="bg-[#007749] text-white py-12 relative overflow-hidden">
