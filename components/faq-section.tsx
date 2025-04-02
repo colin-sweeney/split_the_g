@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, HelpCircle, ThumbsUp, Coffee } from "lucide-react"
+import { ChevronDown, HelpCircle, ThumbsUp, Beer, Star } from "lucide-react"
 
 export default function FAQSection() {
   // State to track which FAQ items are expanded
@@ -40,7 +40,7 @@ export default function FAQSection() {
     },
     {
       question: "How can I spread the word about this genius challenge?",
-      answer: "Just like the Ice Bucket Challenge, nominate three friends after your attempt, share your Split The G moment on social media with the hashtag #SplitTheG, and tell people why this cause matters! You can also share the fact that every donation, no matter how small, makes a real difference to organizations providing essential services to vulnerable communities around the world."
+      answer: "Just like the Ice Bucket Challenge, nominate three friends after your attempt, share your Split The G moment on social media with the hashtag #SplitTheG, and share a link to this site (SplitTheG.org). Tell people why this cause matters! You can also share the fact that every donation, no matter how small, makes a real difference to organizations providing essential services to vulnerable communities around the world."
     },
     {
       question: "Is Split The G officially affiliated with Guinness?",
@@ -48,15 +48,15 @@ export default function FAQSection() {
     }
   ]
 
-  // Random fun facts about Guinness to display under expanded answers
+  // Verified fun facts about Guinness to display under expanded answers
   const funFacts = [
-    "The perfect Guinness pour takes exactly 119.5 seconds!",
-    "Guinness bubbles actually sink rather than rise – it's science!",
-    "The original Guinness brewery in Dublin has a 9,000-year lease!",
-    "Guinness contains fewer calories than orange juice or skim milk!",
-    "The distinctive Guinness harp logo is based on the Brian Boru harp from the 14th century!",
-    "Over 10 million glasses of Guinness are enjoyed daily worldwide!",
-    "In the 1920s, Guinness ran the ad slogan 'Guinness is Good for You' - we're not making health claims, but splitting the G is definitely good for others!"
+    "The perfect Guinness pour takes 119.5 seconds according to the company!",
+    "Guinness bubbles actually sink rather than rise due to their unique nitrogen/carbon dioxide mix!",
+    "The original Guinness brewery at St. James's Gate in Dublin has a 9,000-year lease signed in 1759!",
+    "A pint of Guinness contains about 210 calories, which is fewer than many other beers!",
+    "The distinctive Guinness harp logo is based on the Brian Boru harp, which is now preserved in Trinity College Dublin!",
+    "Guinness is brewed in over 50 countries and sold in over 120 countries worldwide!",
+    "Guinness Foreign Extra Stout makes up 45% of Guinness's global sales, largely due to its popularity in Africa and Southeast Asia!"
   ]
 
   return (
@@ -146,7 +146,11 @@ export default function FAQSection() {
                   
                   {/* Fun fact that appears when expanded */}
                   <div className="mt-4 bg-[#FFCE00]/10 p-3 rounded-lg border border-[#FFCE00]/30 flex items-start">
-                    <Coffee className="h-5 w-5 mr-2 text-[#007749] flex-shrink-0 mt-0.5" />
+                    {index % 2 === 0 ? (
+                      <Beer className="h-5 w-5 mr-2 text-[#007749] flex-shrink-0 mt-0.5" />
+                    ) : (
+                      <Star className="h-5 w-5 mr-2 text-[#007749] flex-shrink-0 mt-0.5" />
+                    )}
                     <p className="text-sm italic text-[#007749]/80">
                       <span className="font-bold">Fun fact:</span> {funFacts[index % funFacts.length]}
                     </p>
