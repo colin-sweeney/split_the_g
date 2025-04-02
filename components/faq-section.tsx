@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, HelpCircle } from "lucide-react"
+import { ChevronDown, HelpCircle, ThumbsUp, Coffee } from "lucide-react"
 
 export default function FAQSection() {
   // State to track which FAQ items are expanded
@@ -16,38 +16,74 @@ export default function FAQSection() {
     )
   }
 
-  // FAQ data
+  // FAQ data with more playful and updated content
   const faqItems = [
     {
-      question: "What is the Split The G Challenge?",
-      answer: "The Split The G Challenge is a fundraising initiative inspired by the iconic Guinness pour. Participants attempt to perfectly split the G in the Guinness logo when taking a sip, donate based on their success, and challenge friends to participate. It's designed to raise awareness and funds for global health initiatives impacted by funding cuts."
+      question: "What on earth is the Split The G Challenge?",
+      answer: "It's a fun, slightly messy (in a good way!) fundraising challenge inspired by the iconic Guinness pour. You attempt to perfectly split the G in the Guinness logo when taking a sip, donate based on your success, and challenge friends to join the fun. Think of it as the Ice Bucket Challenge, but warmer, tastier, and with a mission to restore vital global health funding!"
     },
     {
-      question: "How does the donation structure work?",
-      answer: "If you achieve a perfect split through the G in your Guinness, you donate $5. If your split is imperfect, you donate $10. It's all in good fun, and either way, you're contributing to vital global health initiatives."
+      question: "How does this quirky donation structure work?",
+      answer: "It's simple! Perfect split = $5 donation. Imperfect split = $10 donation. But don't worry if your splits are consistently imperfect – practice makes perfect, and every donation makes a difference! The real goal is to have fun while supporting an important cause. Plus, you get to enjoy a Guinness, so everyone wins!"
     },
     {
-      question: "Where do the donations go?",
-      answer: "All donations support organizations working on critical health programs in Sub-Saharan Africa and other regions that have been impacted by recent funding cuts. These programs provide essential healthcare services to vulnerable communities."
+      question: "Where exactly do my donations go?",
+      answer: "All donations support the Foreign Aid Bridge Fund, an emergency fund designed to help frontline organizations impacted by the U.S. foreign aid freeze. The fund specifically supports high-impact organizations with sustainable business models that have had their operations curtailed. These organizations work directly with communities in health, water, agriculture, education, and humanitarian response. For example, they've already made 14 emergency grants to organizations like Zvandiri (supporting young people with HIV in Zimbabwe), Maisha Meds (providing affordable healthcare across Africa), and Build Up Nepal (creating climate-resilient housing in disaster-prone areas)."
     },
     {
       question: "Do I have to drink Guinness to participate?",
-      answer: "While the challenge was inspired by the iconic Guinness pour, participation is flexible. You're welcome to participate with any beverage or simply donate directly to support the cause if you prefer not to consume alcohol."
+      answer: "Nope! While the challenge was inspired by the iconic Guinness pour, participation is flexible. Non-beer drinkers can use Guinness 0 (their non-alcoholic option), another beverage of choice, or simply donate directly. The spirit of the challenge is what matters – supporting vital global health initiatives while having a bit of fun!"
     },
     {
-      question: "How can I spread the word about Split The G?",
-      answer: "Just like the Ice Bucket Challenge, the best way to spread the word is to nominate friends after your attempt, share your Split The G moment on social media with the hashtag #SplitTheG, and encourage others to learn about the cause."
+      question: "What does Guinness have to do with Africa?",
+      answer: "Great question! Africa is actually the world's largest market for Guinness beer, with Nigeria being the second-largest market for the brand outside of the UK. Guinness has been brewed in Africa since 1962 and has become deeply integrated into the culture in many African countries. In Nigeria alone, there are currently three Guinness breweries! This connection makes the challenge especially meaningful, as we're using a product that's popular in many of the same regions affected by global health funding cuts."
     },
     {
-      question: "Is Split The G affiliated with Guinness?",
-      answer: "Split The G is an independent initiative that draws inspiration from the iconic Guinness pour. While we appreciate the cultural significance of Guinness in many regions affected by health funding cuts, we are not officially affiliated with or endorsed by Guinness."
+      question: "How can I spread the word about this genius challenge?",
+      answer: "Just like the Ice Bucket Challenge, nominate three friends after your attempt, share your Split The G moment on social media with the hashtag #SplitTheG, and tell people why this cause matters! You can also share the fact that every donation, no matter how small, makes a real difference to organizations providing essential services to vulnerable communities around the world."
+    },
+    {
+      question: "Is Split The G officially affiliated with Guinness?",
+      answer: "Split The G is an independent initiative inspired by the iconic Guinness pour and the beer's cultural significance in regions affected by health funding cuts. While we appreciate Guinness and its role in many communities worldwide, we are not officially affiliated with or endorsed by Guinness. We're just fans with a creative idea for making a difference!"
     }
+  ]
+
+  // Random fun facts about Guinness to display under expanded answers
+  const funFacts = [
+    "The perfect Guinness pour takes exactly 119.5 seconds!",
+    "Guinness bubbles actually sink rather than rise – it's science!",
+    "The original Guinness brewery in Dublin has a 9,000-year lease!",
+    "Guinness contains fewer calories than orange juice or skim milk!",
+    "The distinctive Guinness harp logo is based on the Brian Boru harp from the 14th century!",
+    "Over 10 million glasses of Guinness are enjoyed daily worldwide!",
+    "In the 1920s, Guinness ran the ad slogan 'Guinness is Good for You' - we're not making health claims, but splitting the G is definitely good for others!"
   ]
 
   return (
     <section id="faq" className="py-20 bg-white relative overflow-hidden">
+      {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-20 bg-[url('/images/pattern.jpg')] bg-repeat-x opacity-10 transform -rotate-3"></div>
       <div className="absolute bottom-0 right-0 w-full h-20 bg-[url('/images/pattern.jpg')] bg-repeat-x opacity-10 transform rotate-3"></div>
+      <div className="absolute top-40 left-10 w-20 h-20 bg-[#FFCE00] rounded-full opacity-20 transform -rotate-12 animate-pulse"></div>
+      <div className="absolute bottom-40 right-10 w-16 h-16 bg-[#E94B3C] rounded-full opacity-20 transform rotate-12 animate-pulse"></div>
+      
+      {/* Floating bubbles effect */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(10)].map((_, i) => (
+          <div 
+            key={i} 
+            className="absolute rounded-full bg-[#007749] opacity-10"
+            style={{
+              width: `${Math.random() * 60 + 20}px`,
+              height: `${Math.random() * 60 + 20}px`,
+              left: `${Math.random() * 100}%`,
+              bottom: `-80px`,
+              animation: `float ${Math.random() * 10 + 15}s linear infinite`,
+              animationDelay: `${Math.random() * 15}s`
+            }}
+          ></div>
+        ))}
+      </div>
 
       <div className="container relative z-10">
         <div className="flex flex-col items-center mb-12">
@@ -67,10 +103,10 @@ export default function FAQSection() {
           {faqItems.map((item, index) => (
             <div 
               key={index} 
-              className={`mb-4 border-2 rounded-lg overflow-hidden transition-all ${
+              className={`mb-6 border-2 rounded-lg overflow-hidden transition-all transform ${
                 expandedItems.includes(index) 
-                  ? "border-[#007749] shadow-lg" 
-                  : "border-gray-200 hover:border-[#007749]/50"
+                  ? "border-[#007749] shadow-lg scale-100" 
+                  : "border-gray-200 hover:border-[#007749]/50 hover:scale-[1.01]"
               }`}
             >
               <button
@@ -78,16 +114,22 @@ export default function FAQSection() {
                 className="w-full text-left p-5 flex items-center justify-between focus:outline-none"
               >
                 <div className="flex items-center">
-                  <HelpCircle className={`mr-3 h-5 w-5 ${
-                    expandedItems.includes(index) ? "text-[#007749]" : "text-gray-400"
-                  }`} />
+                  <div className={`mr-3 h-8 w-8 flex-shrink-0 rounded-full 
+                    ${expandedItems.includes(index) ? "bg-[#007749]" : "bg-gray-100"} 
+                    flex items-center justify-center transition-all duration-300 shadow-md transform 
+                    ${expandedItems.includes(index) ? "rotate-0" : "-rotate-6"}`}
+                  >
+                    <HelpCircle className={`h-5 w-5 ${
+                      expandedItems.includes(index) ? "text-white" : "text-gray-400"
+                    }`} />
+                  </div>
                   <span className={`font-bold text-lg ${
                     expandedItems.includes(index) ? "text-[#007749]" : "text-gray-800"
                   }`}>
                     {item.question}
                   </span>
                 </div>
-                <ChevronDown className={`h-5 w-5 transition-transform ${
+                <ChevronDown className={`h-5 w-5 transition-transform duration-300 ${
                   expandedItems.includes(index) ? "transform rotate-180 text-[#007749]" : "text-gray-400"
                 }`} />
               </button>
@@ -95,18 +137,56 @@ export default function FAQSection() {
               <div 
                 className={`overflow-hidden transition-all duration-300 ${
                   expandedItems.includes(index) 
-                    ? "max-h-96 opacity-100" 
+                    ? "max-h-[600px] opacity-100" 
                     : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="p-5 pt-0 border-t border-gray-200">
-                  <p className="text-gray-600">{item.answer}</p>
+                  <p className="text-gray-600 mb-4">{item.answer}</p>
+                  
+                  {/* Fun fact that appears when expanded */}
+                  <div className="mt-4 bg-[#FFCE00]/10 p-3 rounded-lg border border-[#FFCE00]/30 flex items-start">
+                    <Coffee className="h-5 w-5 mr-2 text-[#007749] flex-shrink-0 mt-0.5" />
+                    <p className="text-sm italic text-[#007749]/80">
+                      <span className="font-bold">Fun fact:</span> {funFacts[index % funFacts.length]}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
+
+          <div className="text-center mt-10">
+            <p className="text-gray-600 mb-3">Still have questions? We'd love to hear from you!</p>
+            <a 
+              href="mailto:info@splittheg.org" 
+              className="inline-flex items-center px-4 py-2 bg-[#007749] text-white rounded-md hover:bg-[#006040] transition-colors"
+            >
+              <ThumbsUp className="mr-2 h-4 w-4" />
+              Get in Touch
+            </a>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.1;
+          }
+          90% {
+            opacity: 0.1;
+          }
+          100% {
+            transform: translateY(-100vh);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </section>
   )
 }
