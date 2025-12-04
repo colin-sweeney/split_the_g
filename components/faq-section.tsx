@@ -164,7 +164,7 @@ export default function FAQSection() {
           <div className="text-center mt-10">
             <p className="text-gray-600 mb-3">Still have questions? We'd love to hear from you!</p>
             <a 
-              href="mailto:info@splittheg.org" 
+              href="colin@splittheg.org" 
               className="inline-flex items-center px-4 py-2 bg-[#007749] text-white rounded-md hover:bg-[#006040] transition-colors"
             >
               <ThumbsUp className="mr-2 h-4 w-4" />
