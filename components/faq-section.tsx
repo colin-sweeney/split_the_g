@@ -28,7 +28,7 @@ export default function FAQSection() {
     },
     {
       question: "Where exactly do my donations go?",
-      answer: "All donations support the Foreign Aid Bridge Fund, an emergency fund designed to help frontline organizations impacted by the U.S. foreign aid freeze. The fund specifically supports high-impact organizations with sustainable business models that have had their operations curtailed. These organizations work directly with communities in health, water, agriculture, education, and humanitarian response."
+      answer: "All donations support GiveWell's All Grants Fund, which searches for the charities and programs that save or improve lives the most per dollar. The fund makes grants on a rolling basis to support high-impact global health initiatives, including incubating newer programs, providing organizational support, promoting policy change, and funding relevant research. GiveWell conducts extensive research to identify the most cost-effective opportunities, with a particular focus on regions like Sub-Saharan Africa that have been impacted by funding cuts. After transaction fees, 100% of donations go directly to recipient organizations—GiveWell doesn't use any of these funds for its own operations."
     },
     {
       question: "Do I have to drink Guinness to participate?",
