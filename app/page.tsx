@@ -167,7 +167,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link 
-                    href="https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global" 
+                    href="https://www.every.org/givewell-top-charities-fund/f/split-the-g-for-give" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white/80 hover:text-[#FFCE00] hover:pl-2 transition-all"
