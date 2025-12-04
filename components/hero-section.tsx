@@ -18,7 +18,7 @@ export default function HeroSection() {
 
   // Updated to point to your new fundraiser
   const openFundraiser = () => {
-    window.open('https://www.every.org/givewell-top-charities-fund/f/split-the-g-for-give', '_blank')
+    window.open('https://www.every.org/givewell-all-grants-fund/f/split-the-g-for-give', '_blank')
   }
 
   return (
