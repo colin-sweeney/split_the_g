@@ -110,7 +110,7 @@ export default function ChallengeSection() {
                   <Button
                     className="bg-[#007749] text-white hover:bg-[#005C38]"
                     onClick={() =>
-                      window.open("https://www.every.org/givewell-top-charities-fund/f/split-the-g-for-give", "_blank")
+                      window.open("https://www.every.org/givewell-all-grants-fund/f/split-the-g-for-give", "_blank")
                     }
                   >
                     <ExternalLink className="mr-2 h-4 w-4" /> Donate Now
