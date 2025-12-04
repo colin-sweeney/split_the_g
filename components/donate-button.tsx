@@ -8,7 +8,7 @@ interface DonateButtonProps extends Omit<ButtonProps, 'onClick'> {
 }
 
 const DonateButton: FC<DonateButtonProps> = ({ 
-  donationUrl = 'https://www.every.org/foreignaidbridgefund/f/split-the-g-for-global',
+  donationUrl = 'https://www.every.org/givewell-top-charities-fund/f/split-the-g-for-give',
   className = "bg-[#E94B3C] text-white hover:bg-[#C7392D] font-bold transform hover:scale-105 transition-transform shadow-lg",
   children = "Donate Now",
   ...props
